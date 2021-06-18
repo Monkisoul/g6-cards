@@ -186,17 +186,53 @@ body {
     background-position-x: -9px;
     background-position-y: -11px;}
 
-  .card.♠[class$="Q"] .symbols .image{
+.card.♣[class$="Q"] .symbols .image{
       background-position-x: -124px;
-      background-position-y: -9px;}
+      background-position-y: -531px;}
 
-  .card.♠[class$="J"] .symbols .image{
+.card.♣[class$="J"] .symbols .image{
         background-position-x: -5px;
-        background-position-y: -9px;}
+        background-position-y: -531px;}
       
-  .card.♠[class$="K"] .symbols .image{
+.card.♣[class$="K"] .symbols .image{
           background-position-x: -242px;
-          background-position-y: -9px;}
+          background-position-y: -531px;}
+
+.card.♥[class$="Q"] .symbols .image{
+            background-position-x: -124px;
+            background-position-y: -182px;}
+      
+.card.♥[class$="J"] .symbols .image{
+              background-position-x: -5px;
+              background-position-y: -182px;}
+            
+.card.♥[class$="K"] .symbols .image{
+                background-position-x: -242px;
+                background-position-y: -182px;}
+
+.card.♦[class$="Q"] .symbols .image{
+                  background-position-x: -124px;
+                  background-position-y: -355px;}
+            
+.card.♦[class$="J"] .symbols .image{
+                    background-position-x: -5px;
+                    background-position-y: -355px;}
+                  
+.card.♦[class$="K"] .symbols .image{
+                      background-position-x: -242px;
+                      background-position-y: -355px;}
+
+.card.♠[class$="Q"] .symbols .image{
+                  background-position-x: -124px;
+                  background-position-y: -9px;}
+            
+.card.♠[class$="J"] .symbols .image{
+                    background-position-x: -5px;
+                    background-position-y: -9px;}
+                  
+.card.♠[class$="K"] .symbols .image{
+                      background-position-x: -242px;
+                      background-position-y: -9px;}
 
       
 
