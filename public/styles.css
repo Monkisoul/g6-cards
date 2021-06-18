@@ -1,0 +1,177 @@
+body {
+    background-color: #fffefe;
+  }
+
+  .card {
+    background-color: #ddd2d2;
+    border: 3px rgb(12, 12, 12) solid;
+    border-radius: 10px;
+    margin: 5px;
+    width: 115px;
+    height: 165px;
+    display: inline-block;
+    position: relative;
+    color: black;
+    
+  }
+
+  
+  
+
+  .card.♦,
+  .card.♥ {
+    color: red;
+  }
+
+  .card-corner {
+    margin: 5px;
+    font-family: monospace;
+    text-align: center;
+    position: absolute;
+  }
+
+  .top-left {
+    top: 0px;
+    left: 0px;
+  }
+
+  .bottom-right {
+    right: 0px;
+    bottom: 0px;
+    transform: rotate(0.5turn);
+  }
+
+  .symbols {
+    position: relative;
+    height:100%
+  }
+
+  .symbols div {
+    position: absolute;
+    font-size-adjust: .85;
+    
+  }
+   div[class$="2"] .symbols div:nth-child(1),
+   div[class$="3"] .symbols div:nth-child(3)
+   {
+    top: 100px;
+    left: 43px;
+    transform: rotate(0.5turn);
+    
+   }  
+ 
+   div[class$="3"] .symbols div:nth-child(2),
+   div[class$="5"] .symbols div:nth-child(1),
+   div[class$="9"] .symbols div:nth-child(9){
+    top: 39%;
+    left: 43px;
+   }  
+   
+   div[class$="2"] .symbols div:nth-child(2),
+   div[class$="3"] .symbols div:nth-child(1){
+    top: 15%;
+    left: 43px;
+   }  
+   
+   div[class$="4"] .symbols div:nth-child(1),
+   div[class$="5"] .symbols div:nth-child(2),
+   div[class$="6"] .symbols div:nth-child(1),
+   div[class$="7"] .symbols div:nth-child(1),
+   div[class$="8"] .symbols div:nth-child(1),
+   div[class$="9"] .symbols div:nth-child(1),
+   div[class$="10"] .symbols div:nth-child(1){
+    top: 15%;
+    left: 18%;
+    }
+
+   div[class$="4"] .symbols div:nth-child(2),
+   div[class$="5"] .symbols div:nth-child(3),
+   div[class$="6"] .symbols div:nth-child(2),
+   div[class$="7"] .symbols div:nth-child(2),
+   div[class$="8"] .symbols div:nth-child(2),
+   div[class$="9"] .symbols div:nth-child(2),
+   div[class$="10"] .symbols div:nth-child(2){
+    top: 15%;
+    left: 65%;
+    }
+   div[class$="4"] .symbols div:nth-child(3),
+   div[class$="5"] .symbols div:nth-child(4),
+   div[class$="6"] .symbols div:nth-child(3),
+   div[class$="7"] .symbols div:nth-child(3),
+   div[class$="8"] .symbols div:nth-child(3),
+   div[class$="9"] .symbols div:nth-child(3),
+   div[class$="10"] .symbols div:nth-child(3){
+    top: 72%;
+    left: 65%;
+    transform: rotate(0.5turn);
+    }
+   
+   div[class$="4"] .symbols div:nth-child(4),
+   div[class$="5"] .symbols div:nth-child(5),
+   div[class$="6"] .symbols div:nth-child(4),
+   div[class$="7"] .symbols div:nth-child(4),
+   div[class$="8"] .symbols div:nth-child(4),
+   div[class$="9"] .symbols div:nth-child(4),
+   div[class$="10"] .symbols div:nth-child(4){
+    top: 72%;
+    left: 18%;
+    transform: rotate(0.5turn)
+    }
+
+
+   div[class$="6"] .symbols div:nth-child(5),
+   div[class$="7"] .symbols div:nth-child(5),
+   div[class$="8"] .symbols div:nth-child(5){
+    top: 42%;
+    left: 18%;
+    
+    }
+   div[class$="6"] .symbols div:nth-child(6),
+   div[class$="7"] .symbols div:nth-child(6),
+   div[class$="8"] .symbols div:nth-child(6){
+    top: 42%;
+    left: 65%
+   }
+   
+   div[class$="7"] .symbols div:nth-child(7),
+   div[class$="8"] .symbols div:nth-child(7),
+   div[class$="10"] .symbols div:nth-child(5){
+    top: 29%;
+    left: 43%
+   }
+   
+   div[class$="8"] .symbols div:nth-child(8),
+   div[class$="10"] .symbols div:nth-child(6){
+    top: 65%;
+    left: 43%;
+    transform: rotate(0.5turn)
+   }
+   div[class$="9"] .symbols div:nth-child(6),
+   div[class$="10"] .symbols div:nth-child(7){
+    top: 35%;
+    left: 18%;
+   }
+   div[class$="9"] .symbols div:nth-child(7),
+   div[class$="10"] .symbols div:nth-child(8){
+    top: 35%;
+    left: 65%;
+   }
+   div[class$="9"] .symbols div:nth-child(8),
+   div[class$="10"] .symbols div:nth-child(9){
+    top: 55%;
+    left: 65%;
+    transform: rotate(0.5turn)
+   }
+   div[class$="9"] .symbols div:nth-child(5),
+   div[class$="10"] .symbols div:nth-child(10){
+    top: 55%;
+    left: 18%;
+    transform: rotate(0.5turn)
+   }
+
+   .card[class$="A"] .symbols div:nth-child(1) {
+    top: 18%;
+    left: 28%;
+    font-size: 45px;
+    
+    }
