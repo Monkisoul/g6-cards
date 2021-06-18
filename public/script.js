@@ -19,7 +19,9 @@ window.onload = () => {
       </div>
       <div class="symbols">
       ${number == "A" ? `<div>${symbol}</div>`: ''}
-      ${number == "J", "Q", "K" ? `<div></div>`: ''}
+
+      ${number == "J" || number == "Q" ||  number == "K" ? `<div class="image"></div>`: ''}
+      
       ${(isNumber) ? `${new Array(parseInt(number))
       .fill(symbol)
           .map((cardSymbol) => `
@@ -27,14 +29,13 @@ window.onload = () => {
           `)
           .join('')
         }` : ''}
-      </div>
+     
+        </div>
       <div class="card-corner bottom-right">
         <div>${number}</div>
         <div>${symbol}</div>
       </div>
-      
-      
-      
+                  
     </div>`
   })
   .join('')

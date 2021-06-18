@@ -1,5 +1,6 @@
 body {
-    background-color: #fffefe;
+    background: rgb(178,178,232);
+    background: linear-gradient(90deg, rgba(178,178,232,1) 52%, rgba(2,0,36,1) 100%, rgba(0,212,255,1) 100%);
   }
 
   .card {
@@ -173,5 +174,11 @@ body {
     top: 18%;
     left: 28%;
     font-size: 45px;
-    
+     
+    }
+   
+    .card[class$="J"] div.image{
+      content: url("~/Cards_Transparent.png");
+      
+
     }
