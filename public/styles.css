@@ -177,8 +177,27 @@ body {
      
     }
    
-    .card[class$="J"] div.image{
-      content: url("~/Cards_Transparent.png");
+    
+  .image{
+    height: 100%;
+    width: 100%;
+    background-size: 364px;
+    background-image: url('/Cards_Transparent.png');
+    background-position-x: -9px;
+    background-position-y: -11px;}
+
+  .card.♠[class$="Q"] .symbols .image{
+      background-position-x: -124px;
+      background-position-y: -9px;}
+
+  .card.♠[class$="J"] .symbols .image{
+        background-position-x: -5px;
+        background-position-y: -9px;}
+      
+  .card.♠[class$="K"] .symbols .image{
+          background-position-x: -242px;
+          background-position-y: -9px;}
+
       
 
-    }
+    

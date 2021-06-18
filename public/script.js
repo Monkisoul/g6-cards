@@ -20,7 +20,7 @@ window.onload = () => {
       <div class="symbols">
       ${number == "A" ? `<div>${symbol}</div>`: ''}
 
-      ${number == "J" || number == "Q" ||  number == "K" ? `<div class="image"></div>`: ''}
+      ${number == "K" || number == "J" ||  number == "Q" ? `<div class="image"></div>`: ''}
       
       ${(isNumber) ? `${new Array(parseInt(number))
       .fill(symbol)
