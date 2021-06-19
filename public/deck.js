@@ -29,7 +29,7 @@ class Deck {
     }
   }
   
-export  {
+module.exports =  {
     Deck,
     Hand
   }

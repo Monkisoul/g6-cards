@@ -1,10 +1,15 @@
-import { Deck, Hand } from '/deck.js'
+
+const container = document.querySelector(".deck");
+const containerHand = document.querySelector(".hand")
 
 
-window.onload = () => {
-  const deck = new Deck()
+fetch("/fetching")
+.then((data) => data.json())
+.then((res) => onFinishedFetching(res))
 
-  const cards = deck.cards.map((card) => {
+
+const createCard = (card, flipped) =>{
+  
     const cardDiv = document.createElement('div')
     cardDiv.classList.add('card');
     const number = card.slice(0, -1);
@@ -12,7 +17,9 @@ window.onload = () => {
     cardDiv.setAttribute('symbol', symbol);
     cardDiv.setAttribute('number', number);
     const isNumber = !isNaN(number);
-    return `<div class="card ${symbol} number =${number}">
+
+    cardDiv.innerHTML =
+     `<div class="card ${symbol} number =${number}">
       <div class="card-corner top-left">
         <div>${number}</div>
         <div>${symbol}</div>
@@ -37,12 +44,38 @@ window.onload = () => {
       </div>
                   
     </div>`
-  })
-  .join('')
+      
 
-  const container = document.getElementById('container')
+    if (flipped) {
+      cardDiv.classList.add("flipped")	
+    }
+    cardDiv.addEventListener("click",()=>{	
+      cardDiv.classList.contains("flipped")?
+      cardDiv.classList.remove("flipped") :
+      cardDiv.classList.add("flipped")
+    })
+  
+    return cardDiv
+    }
+    
+    function onFinishedFetching(res) {
+      const { deck, hands } = res;
+    
+      deck.forEach((card, index)=> {
+        container.appendChild(createCard(card,(index < 2)))
+        
+      });
+      
+      hands.forEach((hand)=>{
+        hand.forEach((card,index)=>{
+          containerHand.appendChild(createCard(card,(index < 2)))
+        })
+      })
+    
+    
+    }
 
-  container.innerHTML = cards
-}
+
+
 
       
