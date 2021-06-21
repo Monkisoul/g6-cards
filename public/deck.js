@@ -12,13 +12,10 @@ class Deck {
       });
     }
   
-    dispatchCards(size) {
-      return new Array(size)
-        .fill()
-        .map(
-          () =>
-            this.cards.splice(parseInt(Math.random() * this.cards.length), 1)[0]
-        );
+    
+    dispatchCards(size) { return new Array(size)  .fill() .map( () =>
+
+        this.cards.splice(parseInt(Math.random() * this.cards.length), 1)[0]  );
     }
   }
   

@@ -18,32 +18,31 @@ const createCard = (card, flipped) =>{
     cardDiv.setAttribute('number', number);
     const isNumber = !isNaN(number);
 
-    cardDiv.innerHTML =
-     `<div class="card ${symbol} number =${number}">
+    cardDiv.innerHTML =        
+
+     `
+     <div class="container">		
+		<div class="back"></div>
+		<div class="front">
+    
+     <div class="card ${symbol} number =${number}">
       <div class="card-corner top-left">
-        <div>${number}</div>
-        <div>${symbol}</div>
+      <div>${number}</div>
+      <div>${symbol}</div>
       </div>
       <div class="symbols">
       ${number == "A" ? `<div>${symbol}</div>`: ''}
 
       ${number == "K" || number == "J" ||  number == "Q" ? `<div class="image"></div>`: ''}
       
-      ${(isNumber) ? `${new Array(parseInt(number))
-      .fill(symbol)
-          .map((cardSymbol) => `
-            <div>${cardSymbol}</div>
-          `)
-          .join('')
-        }` : ''}
+      ${(isNumber) ? `${new Array(parseInt(number))  .fill(symbol) .map((cardSymbol) => `<div>${cardSymbol}</div>`) .join('') }` : ''}
      
         </div>
       <div class="card-corner bottom-right">
         <div>${number}</div>
         <div>${symbol}</div>
-      </div>
-                  
-    </div>`
+      </div> </div>                 
+    </div></div>`
       
 
     if (flipped) {

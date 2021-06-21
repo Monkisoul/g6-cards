@@ -4,8 +4,7 @@ body {
   }
 
   .card {
-    background-color: #ddd2d2;
-    border: 3px rgb(12, 12, 12) solid;
+    
     border-radius: 10px;
     margin: 5px;
     width: 115px;
@@ -13,11 +12,10 @@ body {
     display: inline-block;
     position: relative;
     color: black;
+    transition: ease 1s;
+    
     
   }
-
-  
-  
 
   .card.♦,
   .card.♥ {
@@ -187,53 +185,88 @@ body {
     background-position-y: -11px;}
 
 .card.♣[class$="Q"] .symbols .image{
-      background-position-x: -124px;
-      background-position-y: -531px;}
+  background-position-x: -124px;
+  background-position-y: -531px;}
 
 .card.♣[class$="J"] .symbols .image{
-        background-position-x: -5px;
-        background-position-y: -531px;}
+  background-position-x: -5px;
+  background-position-y: -531px;}
       
 .card.♣[class$="K"] .symbols .image{
-          background-position-x: -242px;
-          background-position-y: -531px;}
+  background-position-x: -242px;
+  background-position-y: -531px;}
 
 .card.♥[class$="Q"] .symbols .image{
-            background-position-x: -124px;
-            background-position-y: -182px;}
+  background-position-x: -124px;
+  background-position-y: -182px;}
       
 .card.♥[class$="J"] .symbols .image{
-              background-position-x: -5px;
-              background-position-y: -182px;}
+  background-position-x: -5px;
+  background-position-y: -182px;}
             
 .card.♥[class$="K"] .symbols .image{
-                background-position-x: -242px;
-                background-position-y: -182px;}
+  background-position-x: -242px;
+  background-position-y: -182px;}
 
 .card.♦[class$="Q"] .symbols .image{
-                  background-position-x: -124px;
-                  background-position-y: -355px;}
+  background-position-x: -124px;
+  background-position-y: -355px;}
             
 .card.♦[class$="J"] .symbols .image{
-                    background-position-x: -5px;
-                    background-position-y: -355px;}
+  background-position-x: -5px;
+  background-position-y: -355px;}
                   
 .card.♦[class$="K"] .symbols .image{
-                      background-position-x: -242px;
-                      background-position-y: -355px;}
+  background-position-x: -242px;
+  background-position-y: -355px;}
 
 .card.♠[class$="Q"] .symbols .image{
-                  background-position-x: -124px;
-                  background-position-y: -9px;}
+  background-position-x: -124px;
+  background-position-y: -9px;}
             
 .card.♠[class$="J"] .symbols .image{
-                    background-position-x: -5px;
-                    background-position-y: -9px;}
+  background-position-x: -5px;
+  background-position-y: -9px;}
                   
 .card.♠[class$="K"] .symbols .image{
-                      background-position-x: -242px;
-                      background-position-y: -9px;}
+ background-position-x: -242px;
+ background-position-y: -9px;}
 
+
+ .back{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform: rotateY(180deg);
+  background-image: url('/cback.png');
+  backface-visibility: hidden;
+  background-size: 114px;
+  background-position-x: 1px;
+  background-position-y: -2px;}
+
+.card.flipped .container{
+  transform: rotateY(180deg);
+  box-shadow: -7px 10px 10px;
+}
+                      
+                 
+.container{
+  background-color: #c2b3b3;
+  border: 2.2px rgb(7, 1, 1) solid;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease-in;
+  box-shadow: 10px 10px 10px ;
+  backface-visibility: hidden;
+ }
+                      
+.front{
+height: 100%;
+width: 100%;
+transition: ease;
+}
       
 
     
