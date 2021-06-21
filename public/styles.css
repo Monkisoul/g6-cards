@@ -241,8 +241,10 @@ body {
   background-image: url('/cback.png');
   backface-visibility: hidden;
   background-size: 114px;
-  background-position-x: 1px;
-  background-position-y: -2px;}
+  background-position-x: 2px;
+  background-position-y: -2px;
+  box-shadow: 10px 10px 10px;
+}
 
 .card.flipped .container{
   transform: rotateY(180deg);
